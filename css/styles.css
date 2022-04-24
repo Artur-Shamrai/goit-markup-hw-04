@@ -142,12 +142,20 @@ padding-bottom: 32px;
 }
 
 .auth-nav .icon {
-  width: 16px;
-  height: 12px;
+  /* width: 16px;
+  height: 12px; */
   margin-right: 10px;
   
 }
 
+.auth-nav .mail {
+  width: 16px;
+  height: 12px;
+}
+.auth-nav .tel {
+  width: 10px;
+  height: 12px;
+}
 
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -170,6 +178,8 @@ padding-bottom: 32px;
   color: var(--akcent);
 }
 .auth-nav .a {
+  display: flex;
+  align-items: center;
   fill: var(--secondary-text-color);
 }
 
@@ -189,7 +199,9 @@ url(../images/background.jpg);
   background-position: center;
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 200px; 
+  padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto; 
 }
 
 .hero .title {
@@ -322,9 +334,13 @@ margin-top: 50px;
 
 .list-socials {
   display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
-    margin-top: 16px;
+  justify-content: center;  
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+
+.team .link-socials:not(:last-child) {
+  margin-right: 10px;
 }
 
 .socials {
@@ -420,6 +436,7 @@ margin-top: 50px;
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 /* Footer Logo */
 .logotipe {
@@ -466,12 +483,11 @@ address { margin-top: 20px ;}
 }
 
 .footer-slogan {
-  font-size: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-color-white);
- padding-top: 12px;
   margin-bottom: 20px;
 }
 
@@ -598,8 +614,9 @@ flex-wrap: wrap;
   border-bottom: 1px solid #EEEEEE;;
 }
 
-.portfolio .item:hover {
+.portfolio a:hover,
+.portfolio a:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
 }
 /* End Portfolio Section */
